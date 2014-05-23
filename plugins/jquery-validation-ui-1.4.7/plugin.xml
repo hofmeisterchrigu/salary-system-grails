@@ -1,0 +1,44 @@
+<plugin name='jquery-validation-ui' version='1.4.7' grailsVersion='1.2.2 &gt; *'>
+  <author>Lim Chee Kin</author>
+  <authorEmail>limcheekin@vobject.com</authorEmail>
+  <title>JQuery Validation UI Plugin - Client Side Validation without writing JavaScript</title>
+  <description>JQuery Validation UI Plugin - Client Side Validation without writing JavaScript</description>
+  <documentation>http://limcheekin.github.com/jquery-validation-ui</documentation>
+  <type>JqueryValidationUiGrailsPlugin</type>
+  <resources>
+    <resource>JqueryValidationUiResources</resource>
+    <resource>org.grails.jquery.validation.ui.JQueryRemoteValidatorController</resource>
+    <resource>org.grails.jquery.validation.ui.JqueryValidationService</resource>
+    <resource>org.grails.jquery.validation.ui.JQueryValidationUiTagLib</resource>
+    <resource>org.grails.jquery.validation.ui.AlphanumericConstraint</resource>
+    <resource>org.grails.jquery.validation.ui.LettersonlyConstraint</resource>
+    <resource>org.grails.jquery.validation.ui.LetterswithbasicpuncConstraint</resource>
+    <resource>org.grails.jquery.validation.ui.PhoneConstraint</resource>
+    <resource>org.grails.jquery.validation.ui.PhoneUSConstraint</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='http://repo.grails.org/grails/plugins' url='http://repo.grails.org/grails/plugins/' />
+  </repositories>
+  <dependencies>
+    <test>
+      <dependency group='org.spockframework' name='spock-grails-support' version='0.7-groovy-2.0' />
+    </test>
+  </dependencies>
+  <plugins>
+    <compile>
+      <plugin group='org.grails.plugins' name='jquery-validation' version='1.9' />
+      <plugin group='org.grails.plugins' name='constraints' version='0.6.0' />
+    </compile>
+    <runtime>
+      <plugin group='org.grails.plugins' name='jquery' version='1.7.2' />
+      <plugin group='org.grails.plugins' name='hibernate' version='2.2.2' />
+    </runtime>
+    <build>
+      <plugin group='org.grails.plugins' name='tomcat' version='2.2.2' />
+    </build>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
